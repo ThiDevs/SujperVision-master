@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="alves.thiago.supervision.MainActivity">
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/EditText01"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/EditText01"
+        android:layout_toRightOf="@+id/EditText01"
+        android:text="connect"
+        app:layout_constraintEnd_toEndOf="@+id/EditText01"
+        app:layout_constraintStart_toStartOf="@+id/EditText01"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="172.16.2.84"
+        app:layout_constraintBottom_toTopOf="@+id/botao"
+        app:layout_constraintTop_toBottomOf="@+id/botao"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="121dp"
+        tools:text="IP" />
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/botao"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/superV"
+        android:layout_width="311dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="SuperVision 82"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
